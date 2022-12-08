@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Bootstrap link -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+
+    <style>
+        .btn {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .right {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class=" justify-content-center col-md-6 mt-5 m-auto">
+                <h1 class=" text-center mt-3 mb-3">Our Lottery App </h1>
+                <hr>
+                <input placeholder="Enter a Name" type="text" id="inputField" class=" form-control">
+                <div class=" btn">
+                    <button onclick=add(),checkIfDuplicateExists(); class="  btn btn-success mt-3 ">Add Name</button>
+                    <button onclick=reset() ; class="  btn btn-danger mt-3 ">Reset</button>
+                    <button onclick=winner() ; class="  btn btn-danger mt-3 ">Choose Winner</button>
+                </div>
+                <div class="row mt-4 ">
+                    <div class="col-md-6">
+
+                        <h6>Participant list.</h6>
+                        <ol id="p-list"> </ol>
+
+                    </div>
+                    <div class="col-md-6   ">
+
+                        <h6 class="right">Winner list.</h6>
+                        <ol class=" ml-5" id="w-list"> </ol>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
